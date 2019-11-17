@@ -1,0 +1,92 @@
+:root {
+    --white: #feeeee;
+    --gray: 10px;
+    --blue: 1px;
+    --pink: 0;
+}
+
+body {
+    background-image: url(../img/background.jpg);
+    background-position: center;
+/*    background-attachment: fixed;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+    padding: 0;
+    }
+
+img.arrow {
+    width: 2vw;
+    
+}
+.card {
+    background-color: transparent;
+    border: 1px solid var(--white);
+}
+
+a, a:hover, a:active {
+    color: var(--white);
+        font-family: 'Cabin Sketch', cursive;
+
+}
+
+#navbarNav > ul > div > div > li > a {
+        color : var(--white);
+}
+
+section {
+color: var(--white);
+        height: 100vh;
+    padding-top: 5vh;
+
+}
+
+section.main {
+    position: relative;
+}
+
+section.my-work {
+    padding: 10vh 10vw;
+}
+
+div.imp-text {
+    padding-top: 25vh;
+    position: absolute;
+    text-align: center;
+}
+
+div.imp-text2 {
+    text-align: center;
+}
+
+h1 {
+    font-weight: 600;
+    font-family: 'Fredericka the Great', cursive;
+
+}
+
+nav, h2, h3 {
+        font-family: 'Raleway', sans-serif;
+    font-family: 'Cabin Sketch', cursive;
+
+
+}
+
+h3 {
+      font-style: italic;
+}
+
+
+
+.full-section {
+    height: 100vh;
+}
+
+.half-section {
+    height: 50vh;
+}
+
+.auto-section {
+    height: auto;
+}
