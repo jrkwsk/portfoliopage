@@ -14,15 +14,21 @@ body {
     font-family: 'Libre Baskerville', serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     }
+
+nav {
+    border-bottom: 1px solid rgba(255,255,255, 0.1);
+}
 
 img.arrow {
     width: 2vw;
+
     
 }
 .card {
     background-color: transparent;
-    border: 1px solid var(--white);
+    border: 1px solid rgba(255,255,255, 0.1);
 }
 
 a, a:hover, a:active {
@@ -37,13 +43,45 @@ a, a:hover, a:active {
 
 section {
 color: var(--white);
-        height: 100vh;
+/*        height: 100vh;*/
     padding-top: 5vh;
 
 }
 
 section.main {
     position: relative;
+}
+
+div.illustrations {
+    position: absolute;
+/*    background-color: rgba(255,5,55, 0.1);*/
+    width: 100vw;
+    max-height: 100vh;
+    z-index: 999;
+}
+
+img.birds {
+        animation: floating 3s ease-in-out infinite 1s;
+        transition: opacity 1.5s 0.5s;
+    opacity: 0.3; }
+    
+
+img.birds-1 {
+        animation: floating 3s ease-in-out infinite 2s;
+        transition: opacity 1s 0.5s;
+        opacity: 0.4;
+
+}
+
+img.birds,img.birds-1 {
+    flex: 1 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container {
+        display: flex;
+
 }
 
 section.my-work {
@@ -89,4 +127,11 @@ h3 {
 
 .auto-section {
     height: auto;
+}
+
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 10px); }
+    to   { transform: translate(0, -0px); }    
 }
